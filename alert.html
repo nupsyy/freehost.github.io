@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Cyber News</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">AIARA</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="alert.html" class="nav__link active">Breach Alerts</a></li>
+                        <li class="nav__item"><a href="report.html" class="nav__link">Security Reports</a></li>
+                        <li class="nav__item"><a href="tips.html" class="nav__link">Security Tips</a></li>
+                        <li class="nav__item"><a href="#links" class="nav__link">Links</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+            <div>
+                <img src="assets/img/r1.png" alt="">
+                
+            </div>
+
+            <!--===== NEWS =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">NEWS</h2>
+
+                <div class="about__containers bd-grid">
+                    
+                    <div>
+                        <h2 class="about__subtitle">Indian transport ministry flaws potentially allowed creation of counterfeit driving licenses.</h2>
+                        <p class="about__text">(28 Feb 2023)</p>
+                        <p class="about__text"> A researcher has disclosed how he was able to access the personal identifiable information (PII) of potentially 185 million Indian citizens - and create counterfeit driving licenses to boot. On February 20, student and cybersecurity researcher Robin Justin published a blog post containing the details of vulnerabilities impacting Sarathi Parivahan, the website for India's Ministry of Road Transport and Highways. </p>
+                        <p class="about__text"> The portal allows citizens to apply for a learner's permit or driving license. Justin was attempting to apply for the latter when, within minutes, he stumbled upon endpoints with broken access controls and missing authorization checks.</p>           
+                    </div>     
+                    <div><p></p></div>
+                    <h2 class="about__subtitle">_______________________</h2>
+                    <div>
+                        <h2 class="about__subtitle">'Hiding in plain sight'</h2>
+                        <p class="about__text"> To authenticate, you only needed an application number and the applicant's date of birth. However, an endpoint intended to check the application state was flawed, so an attacker could supply a random application number to learn the associated applicant's date of birth, name, address, and driving license number - as well as pull up a photo of the individual. </p>
+                        <p class="about__text"> Since brute-forcing random application numbers would be time-consuming, Justin explored the portal further and found a second vulnerable endpoint, which only required a phone number and a victim's date of birth to access the application number.</p>           
+                    </div>                                  
+                </div>
+            </section>
+
+            <div>
+                <img src="assets/img/last.png" alt="">
+                
+            </div>
+
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer" id="links">
+            <p class="footer__title">AIARA</p>
+            <div class="footer__social">
+                <a href="https://www.instagram.com/aiara_cybernews/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; All rigths reserved</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
